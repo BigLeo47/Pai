@@ -1,0 +1,31 @@
+:root{
+  --bg:#000;
+  --wall:#001f7a;
+  --pellet:#ffd27f;
+  --pac:#ffd500;
+  --text:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Inter,system-ui,Arial,Helvetica,sans-serif;
+  padding:20px;
+}
+main{max-width:520px;text-align:center}
+h1{margin-bottom:10px;font-size:20px}
+canvas{
+  background:#000;
+  display:block;
+  margin:0 auto;
+  border:4px solid #071a3a;
+  image-rendering: pixelated;
+}
+.info{margin-top:10px;display:flex;gap:10px;align-items:center;justify-content:center}
+button{padding:6px 10px;border-radius:6px;border:none;background:#0b5ca6;color:white;cursor:pointer}
+button:hover{filter:brightness(1.05)}
+footer{margin-top:10px;color:#9aa9c7}
